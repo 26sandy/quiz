@@ -1,38 +1,113 @@
+
+body{
+  background-image:  url(qc1.avif)  ;
+  
+ 
+}
+
 .App {
   text-align: center;
+ margin-top: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question-card{
+ 
+  background: white;
+  height: auto;
+  width: 40%;
+  padding: 10px;
+  margin: 0 auto;
+  border: 2px solid rgb(194, 183, 183);
+  border-radius: 20px;
+  box-shadow: 10px;
+  color: rgb(22, 28, 31);
+}
+ul{
+  list-style-type: none;
+  
+}
+li{
+  background-color: rgb(71, 68, 231);
+  color: aliceblue;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+  margin:10px;
+  margin-right: 50px;
+  
+  cursor: pointer;
+}
+li:hover{
+  color: rgb(245, 245, 249) ;
+   background: rgb(27, 13, 96);
+   border: blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.questiontext{
+  color: rgb(31, 31, 31);
+  font-size: 24px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.finalresult{
+  background: rgb(31, 49, 188);
+  height: 40vh;
+  width: 30%;
+  padding: 10px;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: rgb(246, 248, 249);
+}
+button{
+  height: 7vh;
+  width: 40%;
+  background-color: green;
   color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+}
+button:hover{
+  color: green;
+  background: white;
+}
+@media  screen and (max-width:600px){
+
+  .question-card{
+    width:80%;
+   font-size: 0.7rem;
+  }
+  .questiontext{
+    font-size: 1rem;
+  }
+  li{
+    font-size: 1rem;
+  }
+  .finalresult{
+    width: 80%;
+  }
+  button{
+    width: 80%;
+    
+  }
+
+  li:hover{
+    color: aliceblue ;
+     background: rgb(71, 68, 231);
+  }
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media  screen and (max-width:1024px){
+  .question-card{
+    width:80%;
   }
-  to {
-    transform: rotate(360deg);
+  .finalresult{
+    width: 80%;
   }
+  button{
+    width: 80%;
+  }
+ 
 }
